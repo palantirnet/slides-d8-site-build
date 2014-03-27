@@ -28,6 +28,29 @@
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
+
+    <style type="text/css">
+
+      div.views-what {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+
+      div.views-what img:first-child {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+
+      div.views-what img {
+        position: absolute;
+        top: 0px;
+        left: 141px;
+      }
+
+    </style>
+
   </head>
 
   <body>
@@ -39,7 +62,7 @@
       <section>
           <h2>Drupal 8 Module Development</h2>
           <h3>The Crash Course</h3>
-          <p><small>Presented by <a href="http://www.twitter.com/Crell">Larry Garfield</a> / <a href="http://twitter.com/ZenDoodles">Andrea Soper</a> / <a href="http://twitter.com/stevector">Steve Persch</a> / </small></p>
+          <p><small>Presented by <a href="http://www.twitter.com/Crell">Larry Garfield</a> / <a href="http://twitter.com/ZenDoodles">Andrea Soper</a> / <a href="http://twitter.com/stevector">Steve Persch</a></small></p>
           <p><a href="http://www.twitter.com/Palantir">@Palantir</a></small></p>
       </section>
       <section>
@@ -57,26 +80,97 @@
           <h1>Goals</h1>
           <h3>SWBAT*</h3>
           <ul>
-              <li class="fragment"></li>
+            <li class="fragment">Model content in abstract from in Drupal</li>
+            <li class="fragment">Display content in different ways</li>
+            <li class="fragment">Query for content</li>
+            <li class="fragment">Control the display of content on the site</li>
+            <li class="fragment">Control the layout of a site</li>
           </ul>
       </section>
 
       <section>
+        <h2>Newsflash</h2>
+        <p class="fragment bigtext">Content Management is content-centric</p>
+        <p class="fragment" style="font-style: italic; margin-top: 1em;">That means it's not design-centric</p>
+        <p class="fragment" style="font-style: italic;">The design should be content-centric, too</p>
+      </section>
+
+      <section>
+        <section>
+          <h2>The Content Strategy stack</h2>
+          <img src="assets/drupal-stack/stack.svg" alt="The Content strategy stack" />
+        </section>
+        <section>
+          <h2>The Drupal stack</h2>
+          <img src="assets/drupal-stack/stack-expanded.svg" alt="The Drupal stack" />
+        </section>
+        <section>
+          <h2>Content Modeling</h2>
+          <img src="assets/drupal-stack/stack-content-model.svg" alt="Content modeling" />
+        </section>
+        <section>
+          <h2>Content Assembly</h2>
+          <img src="assets/drupal-stack/stack-content-assembly.svg" alt="Content assembly" />
+        </section>
+        <section>
+          <h2>Layout</h2>
+          <img src="assets/drupal-stack/stack-layout.svg" alt="Layout" />
+        </section>
+        <section>
+          <h2>Display</h2>
+          <img src="assets/drupal-stack/stack-display.svg" alt="Display / Theming" />
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>The Views Stack</h2>
+        </section>
+        <section>
+          <h2>What</h2>
+          <div class="views-what">
+            <img class="current-visible" src="assets/drupal-stack/views-what-1.svg" alt="Views: What data?" />
+            <img class="fragment current-visible" src="assets/drupal-stack/views-what-2.svg" alt="Views: What data?" />
+            <img class="fragment current-visible" src="assets/drupal-stack/views-what-3.svg" alt="Views: What data?" />
+            <img class="fragment current-visible" src="assets/drupal-stack/views-what-4.svg" alt="Views: What data?" />
+            <img class="fragment" src="assets/drupal-stack/views-what-5.svg" alt="Views: What data?" />
+          </div>
+        </section>
+        <section>
+          <h2>How</h2>
+          <img src="assets/drupal-stack/views-how.svg" alt="Views: How?" />
+        </section>
+        <section>
+          <h2>Where</h2>
+          <img src="assets/drupal-stack/views-where.png" alt="Views: Where?" />
+        </section>
+      </section>
+
+      <section>
+        <h2>Case study</h2>
+        <h3>The Lego Museum</h3>
+        <ul>
+          <li class="fragment">Artwork (Lego kit)</li>
+          <li class="fragment">Categories of artwork</li>
+          <li class="fragment">Artist</li>
+          <li class="fragment">Exhibit (collection of kits)</li>
+          <li class="fragment">Lesson plans...?</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><a href="http://www.palantir.net/">Palantir.net</a></h2>
         <div>
-          <p><strong>Larry Garfield</strong>: Senior Architect</p>
-          <p><strong>Andrea Soper</strong>: Senior Engineer</p>
-          <p><strong>Steve Persch</strong>: Senior Engineer</p>
+          <p><strong>Larry Garfield</strong>, Senior Architect</p>
+          <p><strong>Andrea Soper</strong>, Senior Engineer</p>
+          <p><strong>Steve Persch</strong>, Senior Engineer</p>
         </div>
 
-        <div  style="margin-top: 1em;">
-          <p><a href="http://www.palantir.net/">Palantir.net</a></section>p>
+        <div style="margin-top: 1em;">
           <p>Making the Web a Better Place</p>
           <p>Keep tabs on our work at <a href="http://twitter.com/Palantir">@Palantir</a></p>
           <p>Want to hear about <a href="http://eepurl.com/ws6uj">what we're doing</a>?</p>
         </div>
       </section>
-
-
 
       </div>
 
